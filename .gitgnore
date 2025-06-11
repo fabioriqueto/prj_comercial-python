@@ -1,0 +1,51 @@
+# Ambiente virtual
+venv/
+ENV/
+env/
+.venv/
+
+# Cache do Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Arquivos temporários
+*.log
+*.pot
+*.pyc
+*.pyo
+*.~ 
+*.swp
+
+# Configs e senhas
+.env
+*.env
+
+# VS Code
+.vscode/
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+
+# Test coverage
+htmlcov/
+.tox/
+.nox/
+.coverage
+coverage.xml
+*.cover
+
+# PyInstaller
+*.spec
+dist/
+build/
+
+# mypy
+.mypy_cache/
+
+# Pytest
+.cache/
+
+# Pylint
+pylint-report.txt
+pylint-global.txt

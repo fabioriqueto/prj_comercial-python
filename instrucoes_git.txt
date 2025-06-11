@@ -1,0 +1,46 @@
+Iniciando o git
+
+git init                          # Caso ainda não tenha iniciado
+git remote add origin https://github.com/fabioriqueto/prj_comercial-python
+git branch -M main
+git add .
+git commit -m "Primeiro commit, subindo projeto para o git"
+git push -u origin main
+
+
+Quando você fizer mudanças locais:
+
+git add .
+git commit -m "Descrição das mudanças"
+git push
+
+
+Quando outra pessoa (ou você em outro computador) fizer mudanças no GitHub:
+
+git pull origin main
+
+
+✅ .gitignore (recomendado)
+Evite subir arquivos desnecessários como o ambiente virtual. Crie um arquivo .gitignore:
+
+bash
+Copiar
+Editar
+# .gitignore
+venv/
+__pycache__/
+*.pyc
+.env
+✅ Dica: use requirements.txt
+Sempre que instalar uma nova biblioteca:
+
+bash
+Copiar
+Editar
+pip freeze > requirements.txt
+Assim, quem clonar o projeto pode instalar as dependências com:
+
+bash
+Copiar
+Editar
+pip install -r requirements.txt
